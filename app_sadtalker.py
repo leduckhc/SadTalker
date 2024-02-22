@@ -95,7 +95,7 @@ def sadtalker_demo(checkpoint_path='checkpoints', config_path='src/config', warp
                                 facerender = gr.Radio(['facevid2vid','pirender'], value='facevid2vid', label='facerender', info="which face render?")
                                 
                             with gr.Row():
-                                batch_size = gr.Slider(label="batch size in generation", step=1, maximum=10, value=1)
+                                batch_size = gr.Slider(label="batch size in generation", step=1, maximum=10, value=2)
                                 enhancer = gr.Checkbox(label="GFPGAN as Face enhancer")
                             
                             submit = gr.Button('Generate', elem_id="sadtalker_generate", variant='primary')
